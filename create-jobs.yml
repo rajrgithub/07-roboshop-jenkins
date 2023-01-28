@@ -3,3 +3,6 @@
   connection: local
   roles:
     - jenkins
+
+
+# [ centos@workstation ~/07-roboshop-jenkins ]$ ansible-playbook create-jobs.yml -e jenkins_password=admin123

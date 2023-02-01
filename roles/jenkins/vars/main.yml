@@ -9,3 +9,15 @@ pipeline_jobs:
 folders:
   - CIPipelines
   - Folder2
+
+ci_pipeline_jobs:
+  - {name: "frontend", dir: "CIPipelines-MultiBranch"}
+  - {name: "cart", dir: "CIPipelines-MultiBranch"}
+  - {name: "catalogue", dir: "CIPipelines-MultiBranch"}
+  - {name: "user", dir: "CIPipelines-MultiBranch"}
+  - {name: "payment", dir: "CIPipelines-MultiBranch"}
+  - {name: "shipping", dir: "CIPipelines-MultiBranch"}
+
+
+multi_folders:
+  - CIPipelines-MultiBranch

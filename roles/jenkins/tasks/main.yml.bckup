@@ -12,3 +12,4 @@
     password: "{{jenkins_password}}"
 
 # [ centos@workstation ~/07-roboshop-jenkins ]$ ansible-playbook create-jobs.yml -e jenkins_password=admin123
+# creates single Job

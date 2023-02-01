@@ -5,10 +5,10 @@
     url: http://172.31.4.34:8080
     user: admin
     password: "{{jenkins_password}}"
-  loop: "{{ multi_folders }}"
+  loop: "{{ folders }}"
 
 - name: Create Pipeline Jobs
-  ansible.builtin.include_tasks: mbranch-pipeline.yml
-  loop: "{{ ci_pipeline_jobs }}"
+  ansible.builtin.include_tasks: pipeline.yml
+  loop: "{{ pipeline_jobs }}"
 
 

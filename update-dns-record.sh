@@ -6,7 +6,7 @@ echo '
   "Changes": [{
     "Action": "UPSERT",
     "ResourceRecordSet": {
-      "Name": "jenkins.devopsb70.online",
+      "Name": "jenkins.rajdevops.online",
       "Type": "A",
       "TTL": 15,
       "ResourceRecords": [{ "Value": "IPADDRESS"}]
@@ -16,6 +16,6 @@ echo '
 ZONE_ID="Z0366464237Z7LZLZPKFA"
 aws route53 change-resource-record-sets --hosted-zone-id ${ZONE_ID} --change-batch file:///tmp/jenkins.json | jq .
 
-
+# [ centos@workstation ~/07-roboshop-jenkins ]$ bash update-dns-record.sh
 
 

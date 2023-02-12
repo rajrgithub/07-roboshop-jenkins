@@ -1,3 +1,4 @@
+# Single Branch Pipeline
 pipeline_jobs:
   - {name: "frontend", dir: "CIPipelines"}
   - {name: "cart", dir: "CIPipelines"}
@@ -10,6 +11,7 @@ folders:
   - CIPipelines
   - Folder2
 
+# Multi Branch pipeline
 ci_pipeline_jobs:
   - {name: "frontend", dir: "CIPipe-MBranch"}
   - {name: "cart", dir: "CIPipe-MBranch"}
@@ -21,3 +23,8 @@ ci_pipeline_jobs:
 
 multi_folders:
   - CIPipe-MBranch
+  # Added for terraform
+  - Infra
+
+sbranch_pipeline_jobs:
+  - {name: "roboshop-infra", dir: "Infra"}

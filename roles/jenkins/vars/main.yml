@@ -26,5 +26,6 @@ multi_folders:
   # Added for terraform
   - Infra
 
+# for terraform
 sbranch_pipeline_jobs:
   - {name: "09-roboshop-infra", dir: "Infra"}

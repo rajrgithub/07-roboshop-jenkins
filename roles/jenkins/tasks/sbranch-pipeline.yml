@@ -1,3 +1,6 @@
+# When we try to create jobs multiple times Build with Parameter will disappear and
+#  Build Now comes again for projects with pipeline parameters
+# to fix the issue use the below
 - name: check if Job exists or not
   community.general.jenkins_job_info:
     url: http://172.31.4.34:8080
@@ -8,7 +11,7 @@
   ignore_errors: yes
 
 - name : debug
-    debug:
+  debug:
       msg: "{{out}}"
 
 - name: Create Config file job.xml

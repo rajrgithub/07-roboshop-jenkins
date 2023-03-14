@@ -30,4 +30,4 @@ multi_folders:
 # for terraform
 sbranch_pipeline_jobs:
   - {name: "09-roboshop-infra", dir: "Infra"}
-  - {name: "roboshop-ansible", dir: "CD"}
+  - {name: "04-roboshop-ansible", dir: "CD"}

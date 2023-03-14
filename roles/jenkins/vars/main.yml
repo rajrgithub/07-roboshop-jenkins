@@ -25,7 +25,9 @@ multi_folders:
   - CIPipe-MBranch
   # Added for terraform
   - Infra
+  - CD
 
 # for terraform
 sbranch_pipeline_jobs:
   - {name: "09-roboshop-infra", dir: "Infra"}
+  - {name: "roboshop-ansible", dir: "CD"}

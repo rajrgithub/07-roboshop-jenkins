@@ -31,3 +31,4 @@ multi_folders:
 sbranch_pipeline_jobs:
   - {name: "09-roboshop-infra", dir: "Infra"}
   - {name: "04-roboshop-ansible", dir: "CD"}
+  - {name: "19-roboshop-helm-chart", dir: "CD"}
